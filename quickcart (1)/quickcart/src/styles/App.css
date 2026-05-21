@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:wght@300;400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand: #1a1a2e;
+  --accent: #e94560;
+  --accent2: #0f3460;
+  --surface: #f8f7f4;
+  --card: #ffffff;
+  --text: #1a1a2e;
+  --text-muted: #6b6b7a;
+  --border: rgba(26, 26, 46, 0.1);
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--surface);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.app-footer {
+  background: var(--brand);
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+}
